@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main()
 {
-    printf("Hello Universe");
+    printf("Hello , I am pratyush chatterjee");
     return 0;
 }
