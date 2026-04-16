@@ -3,8 +3,6 @@
 
 int stack[MAX];
 int top = -1;
-
-// Function to Insert (Push)
 void push() {
     int value;
     if (top == MAX - 1) {
@@ -17,8 +15,6 @@ void push() {
         printf("Inserted successfully!\n");
     }
 }
-
-
 void pop() {
     if (top == -1) {
         printf("Stack Underflow!\n");
@@ -27,8 +23,6 @@ void pop() {
         top--;
     }
 }
-
-
 void display() {
     if (top == -1) {
         printf("Stack is empty!\n");
