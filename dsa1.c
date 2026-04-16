@@ -18,7 +18,7 @@ void push() {
     }
 }
 
-// Function to Delete (Pop)
+
 void pop() {
     if (top == -1) {
         printf("Stack Underflow!\n");
@@ -28,7 +28,7 @@ void pop() {
     }
 }
 
-// Function to Display
+
 void display() {
     if (top == -1) {
         printf("Stack is empty!\n");
