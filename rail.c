@@ -1,23 +1,21 @@
 #include <stdio.h>
 #include <string.h>
-
 #define MAX 50
-
 struct Passenger {
     char name[50];
     int age;
     int seatNo;
 };
-
 struct Passenger p[MAX];
 int count = 0;
 int seat = 1;
-
-void bookTicket() {
-    if (count >= MAX) {
+void bookTicket() 
+{
+    if (count >= MAX)
+     {
         printf("\nNo seats available!\n");
         return;
-    }
+     }
 
     printf("\nEnter Passenger Name: ");
     scanf(" %[^\n]", p[count].name);
@@ -34,22 +32,25 @@ void bookTicket() {
     seat++;
 }
 
-void viewTickets() {
+void viewTickets()
+ {
     int i;
 
-    if (count == 0) {
+    if (count == 0) 
+    {
         printf("\nNo bookings found!\n");
         return;
     }
 
     printf("\n--- Passenger List ---\n");
 
-    for (i = 0; i < count; i++) {
+    for (i = 0; i < count; i++)
+     {
         printf("\nPassenger %d\n", i + 1);
         printf("Name: %s\n", p[i].name);
         printf("Age: %d\n", p[i].age);
         printf("Seat No: %d\n", p[i].seatNo);
-    }
+     }
 }
 
 void cancelTicket() {
